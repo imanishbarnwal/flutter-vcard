@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
                 'Manish Kumar Barnwal',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
-                  fontSize: 30.0,
+                  fontSize: 33.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
@@ -31,9 +32,49 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Source Sans Pro',
                   color: Colors.teal[100],
-                  fontSize: 15.0,
-                  letterSpacing: 2.0,
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+91 80134 53032',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 18.0,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'manishbarnwal725@gmail.com',
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'),
+                  ),
                 ),
               ),
             ],
